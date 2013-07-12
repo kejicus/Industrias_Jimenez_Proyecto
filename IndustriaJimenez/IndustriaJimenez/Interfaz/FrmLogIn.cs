@@ -7,21 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ProyectoIndustriasJimenez
+namespace IndustriaJimenez.Interfaz
 {
-    public partial class Prueba : Form
+    public partial class FrmLogIn : Form
     {
-        Bienvenido dsd = new Bienvenido();
-        public Prueba()
+        public FrmLogIn()
         {
             InitializeComponent();
-            dsd.Show();
-            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            FrmPrincipal vPrincipal = new FrmPrincipal();
+            this.Hide();
+            vPrincipal.ShowDialog();
+            this.Dispose();
         }
+
     }
 }

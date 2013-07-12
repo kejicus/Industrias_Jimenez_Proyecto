@@ -7,18 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ProyectoIndustriasJimenez
+namespace IndustriaJimenez.Interfaz
 {
-    public partial class VerEmpleados : Form
+    public partial class FrmGenerarReportes : Form
     {
-        public VerEmpleados()
+        public FrmGenerarReportes()
         {
             InitializeComponent();
-        }
-
-        private void Grid_Empleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

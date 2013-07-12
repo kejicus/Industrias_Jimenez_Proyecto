@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CF9F86AE-455D-42D8-8B68-B0BE6B37023E}</ProjectGuid>
+    <ProjectGuid>{9624CB3B-D939-426A-B86B-9C08385C9603}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProyectoIndustriasJimenez</RootNamespace>
-    <AssemblyName>ProyectoIndustriasJimenez</AssemblyName>
-    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <RootNamespace>IndustriaJimenez</RootNamespace>
+    <AssemblyName>IndustriaJimenez</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,28 +46,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bienvenido.cs">
+    <Compile Include="Interfaz\FrmAgregarFeriado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bienvenido.Designer.cs">
-      <DependentUpon>Bienvenido.cs</DependentUpon>
+    <Compile Include="Interfaz\FrmAgregarFeriado.Designer.cs">
+      <DependentUpon>FrmAgregarFeriado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Prueba.cs">
+    <Compile Include="Interfaz\FrmAgregarPersonas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Prueba.Designer.cs">
-      <DependentUpon>Prueba.cs</DependentUpon>
+    <Compile Include="Interfaz\FrmAgregarPersonas.Designer.cs">
+      <DependentUpon>FrmAgregarPersonas.cs</DependentUpon>
     </Compile>
-    <Compile Include="VerEmpleados.cs">
+    <Compile Include="Interfaz\FrmModificarFeriado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VerEmpleados.Designer.cs">
-      <DependentUpon>VerEmpleados.cs</DependentUpon>
+    <Compile Include="Interfaz\FrmModificarFeriado.Designer.cs">
+      <DependentUpon>FrmModificarFeriado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FrmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FrmLogIn.Designer.cs">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FrmRegistrarHoras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FrmRegistrarHoras.Designer.cs">
+      <DependentUpon>FrmRegistrarHoras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Frm_AgregarHorasDiaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Frm_AgregarHorasDiaria.Designer.cs">
+      <DependentUpon>Frm_AgregarHorasDiaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\FrmGenerarReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\FrmGenerarReportes.Designer.cs">
+      <DependentUpon>FrmGenerarReportes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Bienvenido.resx">
-      <DependentUpon>Bienvenido.cs</DependentUpon>
+    <EmbeddedResource Include="Interfaz\FrmAgregarFeriado.resx">
+      <DependentUpon>FrmAgregarFeriado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FrmAgregarPersonas.resx">
+      <DependentUpon>FrmAgregarPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FrmLogIn.resx">
+      <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FrmModificarFeriado.resx">
+      <DependentUpon>FrmModificarFeriado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FrmRegistrarHoras.resx">
+      <DependentUpon>FrmRegistrarHoras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Frm_AgregarHorasDiaria.resx">
+      <DependentUpon>Frm_AgregarHorasDiaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\FrmGenerarReportes.resx">
+      <DependentUpon>FrmGenerarReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -77,13 +128,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Prueba.resx">
-      <DependentUpon>Prueba.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VerEmpleados.resx">
-      <DependentUpon>VerEmpleados.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -95,7 +141,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Resources\Logo.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
